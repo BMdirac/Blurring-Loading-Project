@@ -9,7 +9,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100vh; /* to push the loading text from top to center */
     overflow: hidden;
     margin: 0;
 }
@@ -23,9 +23,8 @@ body {
     width: calc(100vw + 60px);
     height: calc(100vh + 60px);
     z-index: -1;
-    filter: blur(0px);
+    filter: blur(0px); /* the value here does not matter as javascript decides what happen  */
 }
-
 
 .loading-text {
     font-size: 50px;
